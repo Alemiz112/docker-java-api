@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.amihaiemil.web</groupId>
+	<groupId>eu.mizerak.alemiz</groupId>
 	<artifactId>docker-java-api</artifactId>
 	<version>0.0.14-SNAPSHOT</version><!--rrv-sed-flag-->
 	<name>Docker Java API</name>
@@ -17,6 +17,16 @@
 			<url>https://opensource.org/licenses/BSD-3-Clause</url>
 		</license>
 	</licenses>
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<url>https://repo.mizerak.eu/artifactory/main</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>https://repo.mizerak.eu/artifactory/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<developers>
 		<developer>
 			<name>Mihai Emil Andronache</name>
@@ -319,14 +329,4 @@
 			</build>
 		</profile>
 	</profiles>
-	<distributionManagement>
-		<repository>
-			<id>oss.sonatype.org</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-		<snapshotRepository>
-			<id>oss.sonatype.org</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
 </project>
